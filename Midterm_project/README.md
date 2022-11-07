@@ -7,6 +7,7 @@
   - [Exploratory data analysis](####exploratory-data-analysis)
   - [Training the models](####training-the-models)
 - [Files](##files)
+- [Instructions](##instructions)
 
 
 ## Project information
@@ -85,7 +86,7 @@ Then I tuned the features of the best 4 models.
 [test_json.txt](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/test_json.txt) Use this json to test the model
 
 
-
+## Instructions
 
 
 
