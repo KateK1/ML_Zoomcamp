@@ -1,22 +1,27 @@
-[Project information](##project-information) 
-
-
-
+## Readme content
+- [Project information](##project-information)
+- [Problem description](##problem-description)
+  - [Dataset description](####dataset-description)
+  - [Theoretical usage of the model](####theoretical-usage-of-the-model)
+- [Project description](##project-description)
+  - [Exploratory data analysis](####exploratory-data-analysis)
+  - [Training the models](####training-the-models)
+- [Files](##files)
 
 
 ## Project information
 
-The project was made for ML Zoomcamp 2022. It involves:
+The project was made for [ML Zoomcamp 2022](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp). It involves:
 - data prepartion  and EDA
-- model treining and tuning
-- ADDD
+- model treining and parametrs tuning
+- deploying model with BentoML
 
 ## Problem description
 
 Fire incidents are one of the common insurance cases households and businesses want to be protected from. However, fire incidents occure and owners bear the loss for the damage. The aim of the project is build model which estimated dollar loss from of the fire incedent using Fire Incidents dataset provided by Toronto Fire Services.
 
-**Dataset description**  
-The dataset counts records about 11K cases of fire incedens during period from 2011 to 2018 in Toronto, Canada. Dataset contains 27 column of numerical, categorical and date time data:
+#### Dataset description
+[The original dataset.](https://www.kaggle.com/datasets/reihanenamdari/fire-incidents) The dataset counts records about 11K cases of fire incedens during period from 2011 to 2018 in Toronto, Canada. Dataset contains 27 column of numerical, categorical and date time data:
 
 - Numerical:  
 persons_rescued (value range 0 - 86). 
@@ -50,25 +55,27 @@ tfs_alarm_time.
 tfs_arrival_time
 
 
-**Theoretical usage of the model**. 
+#### Theoretical usage of the model. 
 - Dollar loss estimation for insurance industry after incedent
 - Dollar loss estimation for fire safety specialists before incedent with study or risk estimation purposes
 
 ## Project description
-- **Data cleaning**  
+- #### Data cleaning  
 Dataset was cleand before but still needed some preparation like filling the NaN values. 
   
-- **EDA**  
+- #### Exploratory data analysis  
 For EDA I analyze diferent types of features and target variable separetly. Target variable have a long tail distribution and was transformed to log1. I find feature imfortanses using correlation and mutual_score. Also I add new features representing time as difference beetween timestampes.  
   
-- **Training the models**. 
-I trained following models using all features and the feachers with the best correlation or mutial score. Total 10 models:  
+- #### Training the models. 
+I trained following models using all features and the features with the best correlation or mutial score. Total 10 models:  
 `Linear regression()`  
 `DecisionTreeRegression()`  
 `RandomForestRegressor()`  
 `XGB`  
 `Ridge()`  
 Then I tuned the features of the best 4 models.
+  
+## Files  
 
 
 
