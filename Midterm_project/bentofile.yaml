@@ -1,0 +1,13 @@
+service: "predict.py:svc"
+labels:
+    owner: bentoml-team
+    stage: dev
+include:
+- "*.py"
+python:
+    packages:
+    - "scikit-learn"
+    - "numpy"
+    - "xgboost==1.6.2"
+
+
