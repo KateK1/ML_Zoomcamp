@@ -21,8 +21,8 @@ latitude, longitude,
 incident_ward
   
 - Categorical:  
-area_of_origin - place where fire starts, contains 73 unique values. 
-business_impact - contains 7 unique values. 
+area_of_origin - place where fire starts, contains 73 unique values  
+business_impact - contains 7 unique values  
 extent_of_fire - contains 12 unique values.  
 fire_alarm_system_impact_on_evacuation - contains 7 unique values.  
 fire_alarm_system_operation - contains 7 unique values.   
@@ -38,7 +38,7 @@ status_of_fire_on_arrival - contains 8 unique values.
   
 - Date time in `%Y-%m-%dT%H:%M:%S` format:  
 ext_agent_app_or_defer_time  
-fire_under_control_time. 
+fire_under_control_time  
 clear_time.   
 tfs_alarm_time. 
 tfs_arrival_time
@@ -47,6 +47,23 @@ tfs_arrival_time
 **Theoretical usage of the model**. 
 - Dollar loss estimation for insurance industry after incedent
 - Dollar loss estimation for fire safety specialists before incedent with study or risk estimation purposes
+
+## Project description
+- **Data cleaning**  
+Dataset was cleand before but still needed some preparation like filling the NaN values. 
+  
+- **EDA**  
+For EDA I analyze diferent types of features and target variable separetly. Target variable have a long tail distribution and was transformed to log1. I find feature imfortanses using correlation and mutual_score. Also I add new features representing time as difference beetween timestampes.  
+  
+- **Training the models**. 
+I trained following models using all features and the feachers with the best correlation or mutial score. Total 10 models:  
+`Linear regression()`  
+`DecisionTreeRegression()`  
+`RandomForestRegressor()`  
+`XGB`  
+`Ridge()`  
+Then I tuned the features of the best 4 models.
+
 
 
 
