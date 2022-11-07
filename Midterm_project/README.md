@@ -76,7 +76,9 @@ I trained following models using all features and the features with the best cor
 Then I tuned the features of the best 4 models.
   
 ## Files  
-
+[The Fire Incidents dataset](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/Fire_Incidents.csv)  
+[] ()
+[df_prepared](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/df_prepared) Modified dataset used to train the final model
 
 
 
