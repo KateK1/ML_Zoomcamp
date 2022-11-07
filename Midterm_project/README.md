@@ -78,14 +78,25 @@ Then I tuned the features of the best 4 models.
   
 ## Files  
 [The Fire Incidents dataset](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/Fire_Incidents.csv)  
-[fire_prediction_notebook.ipynb] (https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/fire_prediction_notebook.ipynb) notebook contains EDA and model training   
+[fire_prediction_notebook.ipynb](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/fire_prediction_notebook.ipynb) notebook contains EDA and model training   
 [df_prepared](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/df_prepared) Modified dataset used to train the final model  
 [train_script.py](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/train_script.py) Final model training and saving it to BentoML    
-[bentofile]()  
+[predict.py](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/predict.py)
+[bentofile.yaml](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/bentofile.yaml)  
 [test_json.txt](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/test_json.txt) Use this json to test the model
 
 
 ## Instructions
-
-
-
+1. Run `train_script.py`  
+  
+2. Run  
+  `bentoml build`
+    
+3. Run  
+  `bentoml containerize fire_loss_model:latest` 
+    
+ 4. Run the command which will be shown in the command line. For example:
+  `docker run -it --rm -p 3000:3000 fire_loss_model: *** serve --production`  
+  
+ 5. Now you can acsess servis at `http://localhost:3000/`  
+Copy json from `test_json.txt` and use it to test the service. The model has a lot of features. If you want to play with it a little more check out the last part of fire_prediction_notebook.ipynb where you can find the final model's top 20 features. Change the top features to see different values of estimated dollar loss for the fire incident.
