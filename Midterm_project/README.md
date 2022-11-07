@@ -77,8 +77,12 @@ Then I tuned the features of the best 4 models.
   
 ## Files  
 [The Fire Incidents dataset](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/Fire_Incidents.csv)  
-[] ()
-[df_prepared](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/df_prepared) Modified dataset used to train the final model
+[notebook] ()  
+[df_prepared](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/df_prepared) Modified dataset used to train the final model  
+[train_script.py](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/train_script.py) Final model training and saving it to BentoML    
+[bentofile]  
+[dockerfile]
+[test_json.txt](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/test_json.txt) Use this json to test the model
 
 
 
