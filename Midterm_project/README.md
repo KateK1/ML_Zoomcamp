@@ -1,3 +1,9 @@
+[Project information](##project-information) 
+
+
+
+
+
 ## Project information
 
 The project was made for ML Zoomcamp 2022. It involves:
