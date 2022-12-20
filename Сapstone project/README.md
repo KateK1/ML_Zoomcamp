@@ -56,7 +56,8 @@ Age - Age of the candidate
 Dataset is already clean and have no missing values and duplicates.
   
 - #### Exploratory data analysis  
- 
+For numerical featured I ploted histogram and boxplot to visualize distribution and outliners. For feature importance between numerical features and categorical binary target I calculated Point Biserial and plot logistic regression plot - both show no strong correlation between target and features.  
+For categorical features I checked unique values and ita distribution. Every value was represented well enought and no rows were elliminated. For feature importance between categorical features and categorical binary target I calculated 'risk' of not-joining the company for every categorical feature unique value. Also I calculated Cramer's V correlation. No feature shows strong correlation
   
 - #### Training the models. 
 with parametrs tuning:  
@@ -68,9 +69,12 @@ with parametrs tuning:
 without parametrs tuning:  
 `Logistic Regression()`  
 `RidgeClassifier()`  
-
   
-Then I tuned the features of the best 4 models.
+For the each model was calculated `roc_auc_score` for y from validation set and y from training set to control overfitting, accuracy.  
+The best 3 models `RandomForestClassifier`, `XGB`, `AdaBoostClassifier` were train on full train set.  
+`RandomForestClassifier` was selected as the beat model with `auc_score = 0.76` (on validation), `auc_score = 0.81` (on training), and `accuracy = 0.82`  
+The most importent feature for the `RandomForestClassifier` model is `notice_period`
+  
   
 ## Files  
 [The Fire Incidents dataset](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/Fire_Incidents.csv) - original dataset  
