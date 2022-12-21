@@ -78,8 +78,8 @@ The most important feature for the `RandomForestClassifier` model is `notice_per
   
   
 ## Files  
-[The dataset](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/Fire_Incidents.csv) - original dataset  
-[fire_prediction_notebook.ipynb](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/fire_prediction_notebook.ipynb) - notebook contains EDA and model training   
+[The dataset](https://github.com/KateK1/ML_Zoomcamp/blob/main/%D0%A1apstone%20project/hr_data.csv) - original dataset  
+[HR_pred_notebook.ipynb](https://github.com/KateK1/ML_Zoomcamp/blob/main/%D0%A1apstone%20project/HR_pred_notebook.ipynb) - notebook contains EDA and model training   
 [train_script.py](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/train_script.py)- final model training and saving it to BentoML  
 [predict.py](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/predict.py)  
 [bentofile.yaml](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/bentofile.yaml)  
@@ -100,7 +100,8 @@ The most important feature for the `RandomForestClassifier` model is `notice_per
   
  5. Now you can acsess service at `http://localhost:3000/`  
  To test the servis use following JSON:  
- `{"doj_extended":"Yes",  
+ ```
+ {"doj_extended":"Yes",  
  "duration_to_accept_offer":62,  
  "notice_period":30,  
  "offered_band":"E1",  
@@ -114,5 +115,7 @@ The most important feature for the `RandomForestClassifier` model is `notice_per
  "rex_in_yrs":3,  
  "lob":"ERS",  
  "age":29
-}`  
+}
+```  
+
 To see the opposite status of the candidates change `notice_period` - the most importent feature of the model
