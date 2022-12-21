@@ -79,7 +79,7 @@ The most important feature for the `RandomForestClassifier` model is `notice_per
   
 ## Files  
 [The dataset](https://github.com/KateK1/ML_Zoomcamp/blob/main/%D0%A1apstone%20project/hr_data.csv) - original dataset  
-[HR_pred_notebook.ipynb](https://github.com/KateK1/ML_Zoomcamp/blob/main/%D0%A1apstone%20project/HR_pred_notebook.ipynb) - notebook contains EDA and model training   
+[HR_pred_notebook.ipynb](https://github.com/KateK1/ML_Zoomcamp/blob/main/%D0%A1apstone%20project/HR_pred_notebook.ipynb) - notebook contains EDA and model training. **This notebook contains Plotly graphs. GitHub doesn't include the embedded HTML/JavaScript that makes up a plotly graphs.** To display all the graphs from this notebook download it or use the service for JNotebooks sharing. For more instructions open the notebook.  
 [train_script.py](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/train_script.py)- final model training and saving it to BentoML  
 [predict.py](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/predict.py)  
 [bentofile.yaml](https://github.com/KateK1/ML_Zoomcamp/blob/main/Midterm_project/bentofile.yaml)  
