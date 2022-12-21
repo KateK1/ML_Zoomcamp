@@ -93,10 +93,10 @@ The most important feature for the `RandomForestClassifier` model is `notice_per
   `bentoml build`
     
 3. Run  
-  `bentoml containerize candidate_status_classifie:latest` 
+  `bentoml containerize candidate_status_classifier:latest` 
     
  4. Run the command which will be shown in the command line. For example:  
-  `docker run -it --rm -p 3000:3000 candidate_status_classifie: *** serve --production`  
+  `docker run -it --rm -p 3000:3000 candidate_status_classifier: *** serve --production`  
   
  5. Now you can acsess service at `http://localhost:3000/`  
  To test the servis use following JSON:  
