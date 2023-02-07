@@ -1,6 +1,7 @@
 # ML_Zoomcamp
 
-- [Midterm project: Fire incident estimated dollar loss](https://github.com/KateK1/ML_Zoomcamp/tree/main/Midterm_project)
+- [1st project: Fire incident estimated dollar loss](https://github.com/KateK1/ML_Zoomcamp/tree/main/Midterm_project)
+- [2d project: HR dataset. Candidate's status prediction](https://github.com/KateK1/ML_Zoomcamp/tree/main/Capstone_project)
 
 ___________
 
