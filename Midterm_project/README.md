@@ -12,14 +12,14 @@
 
 ## Project information
 
-The project was made for [ML Zoomcamp 2022](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp). It involves:
+The project was made for [ML Zoomcamp 2022](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp)and involves:
 - data preparation and EDA
-- model treining and parametrs tuning
+- model training and parameters tuning
 - deploying model with BentoML
 
 ## Problem description
 
-Fire incidents are one of the common insurance cases households and businesses want to be protected from. However, fire incidents occur and owners bear the loss for the damage. The project aims to build a model which estimated dollar loss from the fire incident using the Fire Incidents dataset provided by Toronto Fire Services.
+Fire incidents are a frequent occurrence that households and businesses seek protection from through insurance. Unfortunately, when these incidents do happen, owners are left to deal with the financial burden of the resulting damage. This project's objective is to develop a model that can predict the monetary loss caused by a fire incident using the Fire Incidents dataset provided by Toronto Fire Services.
 
 #### Dataset description
 [The original dataset.](https://www.kaggle.com/datasets/reihanenamdari/fire-incidents) The dataset counts records about 11K cases of fire incidents during the period from 2011 to 2018 in Toronto, Canada. The dataset contains 27 columns of numerical, categorical, and date-time data:
@@ -65,7 +65,7 @@ tfs_arrival_time
 Dataset is already clean but still needed some preparation like filling in the NaN values. 
   
 - #### Exploratory data analysis  
-For EDA I analyze different types of features and target variables separately. The target variable has a long tail distribution and was transformed to log1. I find feature importance using correlation and mutual_score. Also, I add new features representing time as a difference between timestamps.  
+For EDA I analyze different types of features and target variables separately. The target variable has a long tail distribution and was transformed to log1. I found feature importance using correlation and mutual_score. Also, I aded new features representing time as a difference between timestamps.  
   
 - #### Training the models. 
 I trained following models using all features and the features with the best correlation or mutial score. Total 10 models:  
